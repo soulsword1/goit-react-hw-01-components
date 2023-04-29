@@ -3,7 +3,12 @@ import styled from "@emotion/styled";
 export const TransactionTable = styled.table`
 margin: 60px 0 60px 60px;
 
-
+width: 400px;
+color:#6c7a89;
+border-radius: 1em;
+border-collapse: collapse;
+overflow: hidden;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `;
 
 export const TableHeader = styled.thead`
