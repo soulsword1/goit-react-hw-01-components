@@ -9,7 +9,7 @@ import {
 export function FriendListItem({ avatar, name, isOnline }) {
   return (
     <FriendItem>
-      <FriendStatus isOnline={isOnline}></FriendStatus>
+      <FriendStatus isOnline={isOnline} />
       <FriendAvatar src={avatar} alt="User avatar" />
       <FriendName>{name}</FriendName>
     </FriendItem>
@@ -17,7 +17,7 @@ export function FriendListItem({ avatar, name, isOnline }) {
 }
 
 FriendListItem.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  isOnline: PropTypes.bool,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
 };

@@ -10,14 +10,6 @@ border-collapse: collapse;
 overflow: hidden;
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-
-& TableRow:last-child TableBodyColumn:first-of-type". {
-  border-bottom-left-radius: 10px;
-}
-    
-& TableRow:last-child TableBodyColumn:last-child {
-  border-bottom-right-radius: 10px;
-}
 `;
 
 export const TableHeader = styled.thead`
@@ -27,14 +19,10 @@ export const TableHeader = styled.thead`
 
 export const TableHeaderColumn = styled.th`
   padding: 15px;
-
-  &:not(:last-child) {
-    border-right: 1px solid #bdc3c7;
-  }
 `;
 
 export const TableRow = styled.tr`
-  &:nth-child(even) {
+  &:nth-of-type(1) >  &:nth-of-type(1) {
     background-color: #eeeeee;
   }
 `;
