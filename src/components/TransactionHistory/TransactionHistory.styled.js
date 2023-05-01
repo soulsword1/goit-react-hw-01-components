@@ -9,7 +9,6 @@ border-radius: 1em;
 border-collapse: collapse;
 overflow: hidden;
 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
 `;
 
 export const TableHeader = styled.thead`
